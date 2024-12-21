@@ -12,7 +12,7 @@ body {
 main {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom , rgb(0, 0, 0) , rgb(255, 255, 255));
+    background: linear-gradient(120deg ,yellow, white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +26,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
 }
 
@@ -43,7 +44,7 @@ form {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(130deg , gray , white);
+    background: linear-gradient(120deg , gray , rgb(33, 30, 30));
     padding: 30px 35px;
     border-radius: 20px;
     box-shadow: 0px  10px  40px  black;
@@ -52,7 +53,12 @@ form {
 form h1 {
     font-weight: 400;
     margin: 0;
+    color: whitesmoke;
 
+}
+
+.left-box h1 {
+    font-size: 3vw;
 }
 
 .caixa-texto {
@@ -77,8 +83,46 @@ form h1 {
 
 
 .caixa-texto label {
-    color:black;
+    color: whitesmoke;
     margin-bottom: 10px;
+
 }
+
+
+.pass-expose {
+    color: whitesmoke;
+    margin-left: -50px;
+    margin-bottom: 20px;
+}
+
+
+.btn-login {
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgb(204, 201, 201);
+    font-size: 12px;
+    box-sizing: border-box;
+
+}
+
+.left-box img {
+    width: 30vw;
+  
+}
+
+.right-box input::placeholder {
+    color:rgb(101, 99, 99);
+    transition: 1s ease-in-out;
+}
+
+.right-box input:hover::placeholder {
+    color: transparent;
+}
+
+
 
 
