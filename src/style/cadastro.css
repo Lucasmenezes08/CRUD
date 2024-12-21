@@ -39,7 +39,7 @@ main {
 }
 
 form {
-    width: 50%;
+    width: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +51,7 @@ form {
 }
 
 form h1 {
-    font-weight: 400;
+    font-weight: 800;
     margin: 0;
     color: whitesmoke;
 
@@ -67,6 +67,7 @@ form h1 {
     align-items: flex-start;
     justify-content: center;
     margin: 10px 0px;
+    
 }
 
 .caixa-texto input{
@@ -85,6 +86,7 @@ form h1 {
 .caixa-texto label {
     color: whitesmoke;
     margin-bottom: 10px;
+    font-weight: 100;
 
 }
 
@@ -106,12 +108,14 @@ form h1 {
     background: rgb(204, 201, 201);
     font-size: 12px;
     box-sizing: border-box;
+    letter-spacing: 3px;
+
+    
 
 }
 
 .left-box img {
-    width: 30vw;
-  
+    width: 28vw
 }
 
 .right-box input::placeholder {
@@ -124,5 +128,20 @@ form h1 {
 }
 
 
+@keyframes animation{
+    0%{
+        transform: scale(1);
+    }
 
+    100%{
+        transform: scale(1.025);
+    }
+}
 
+button:hover{
+    animation-name: animation;
+    animation-duration: 0.5s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
